@@ -164,7 +164,7 @@ void ExceptionHandler(ExceptionType which)
             maxStringLengthInput = machine->ReadRegister(5);             // Get the maximum length of the input string from register 5
 	    if(length > MAX_STRING_LENGTH) {
 		DEBUG('a', "\n Not enough buffer to read tring");
-        	printf("\n\n Not enough buffer to read tring");
+        	printf("\n Not enough buffer to read tring");
 		IncreasePC();
 		return;
 	    }
@@ -193,7 +193,7 @@ void ExceptionHandler(ExceptionType which)
                 length++; // Calculate the actual length of the string
 	if(length > MAX_STRING_LENGTH) {
 		DEBUG('a', "\n Not enough buffer to printString");
-        	printf("\n\n Not enough buffer to printString");
+        	printf("\n Not enough buffer to printString");
 		IncreasePC();
 		return;
 	}
